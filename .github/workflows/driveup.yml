@@ -90,12 +90,12 @@ jobs:
       - name: 'Send mail'
         uses: dawidd6/action-send-mail@master
         with:
-          serveraddress: smtp.163.com
-          serverport: 465
-          username: ${{ secrets.MAILUSERNAME }}
-          password: ${{ secrets.MAILPASSWORD }}
-          subject: 下载完成通知
-          body: "下载完成"
+          server_address: smtp.163.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: Download complete
+          body: "ok"
           to: 2412258222@qq.com
           from: GitHub Actions
-          content_type: text/html
+          content_type: text/plain

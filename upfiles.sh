@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://nyaa.si/download/1262555.torrent
+wget https://nyaa.si/download/1261951.torrent
 aria2c -x 64 --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 *.torrent
 #for ((i=1, j=20; i<=1064; i=i+20, j=j+20))
 #do

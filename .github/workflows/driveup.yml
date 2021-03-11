@@ -73,7 +73,7 @@ jobs:
           ./upfiles.sh
       - name: Upload Drives
         run: |
-          rclone move -P --exclude "*.{sh,torrent,aria2}" /home/runner/work/DrivesDown/DrivesDown/download/ onedrive:/
+          rclone move -P --exclude "*.{sh,torrent,aria2}" /home/runner/work/DrivesDown/DrivesDown/download/ animation:/
       - name: Upload Files to cowtransfer
         if: env.UPLOAD_COW == 'true'
         run: |

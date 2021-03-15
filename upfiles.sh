@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://nyaa.si/download/1201874.torrent
+wget https://issuecdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_7.2.5.1.exe
 aria2c -x 64 --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 *.torrent
 #for ((i=1, j=20; i<=1064; i=i+20, j=j+20))
 #do

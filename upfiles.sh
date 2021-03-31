@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://bangumi.moe/download/torrent/5b0b795f24dd68674f52891d/[VCB-Studio]%20Vienna%20New%20Year's%20Concert%202018%20_%20%E7%BB%B4%E4%B9%9F%E7%BA%B3%E6%96%B0%E5%B9%B4%E9%9F%B3%E4%B9%90%E4%BC%9A%202018%2010-bit%201080p%20HEVC%20BDRip%20[Fin].torrent
+wget https://link.jscdn.cn/sharepoint/aHR0cHM6Ly9zaHRoZXktbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvaHJmX3NodGhleV9vbm1pY3Jvc29mdF9jb20vRWNpY0laRGlEczlGZ1N3X3BVLXROek1COEJZOE9RamZ6dXFxSEFLSlRWb3dUQT9lPWh6cDdSbg==.torrent
 aria2c -x 64 --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 *.torrent
 #for ((i=1, j=15; i<=1064; i=i+15, j=j+15))
 #do

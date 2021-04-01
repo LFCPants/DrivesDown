@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://link.jscdn.cn/sharepoint/aHR0cHM6Ly9zaHRoZXktbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvaHJmX3NodGhleV9vbm1pY3Jvc29mdF9jb20vRWNpY0laRGlEczlGZ1N3X3BVLXROek1COEJZOE9RamZ6dXFxSEFLSlRWb3dUQT9lPWh6cDdSbg==.torrent
+wget https://nyaa.si/download/1026482.torrent
 aria2c -x 64 --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 *.torrent
 #for ((i=1, j=15; i<=1064; i=i+15, j=j+15))
 #do

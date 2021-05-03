@@ -1,7 +1,7 @@
 #!/bin/bash
-wget https://nyaa.si/download/950825.torrent
+wget https://nyaa.si/download/949900.torrent
 #aria2c -x 64 --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 *.torrent
-for ((i=1, j=10; i<=300; i=i+10, j=j+10))
+for ((i=1, j=10; i<=600; i=i+10, j=j+10))
 do
 aria2c -x 64 --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 --select-file=$i-$j *.torrent
 rclone move -v --transfers 12 --checkers 16 --onedrive-chunk-size 200M --exclude "*.{sh,torrent,aria2}" /home/runner/work/DrivesDown/DrivesDown/download/ onedrive:/"我的文件 - animation_1 的文件"/番/

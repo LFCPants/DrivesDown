@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://bangumi.moe/download/torrent/591c3a2b1a0b23082244847e/[VCB-Studio]%20Tokyo%20Ghoul%20_%20%E4%B8%9C%E4%BA%AC%E5%96%B0%E7%A7%8D%20_%20%E3%83%88%E3%83%BC%E3%82%AD%E3%83%A7%E3%83%BC%E3%82%B0%E3%83%BC%E3%83%AB%20S1+S2+OVA%2010-bit%201080p%20AVC_HEVC%20BDRip%20[Reseed%20Fin].torrent
+wget https://bangumi.moe/download/torrent/5927fc3f1a0b230822448ee2/[VCB-Studio]%20Regalia%20The%20Three%20Sacred%20Stars%20_%20%E9%9B%B7%E5%8A%A0%E5%88%A9%E4%BA%9A%20%E4%B8%89%E5%9C%A3%E6%98%9F%20_%20%E3%83%AC%E3%82%AC%E3%83%AA%E3%82%A2%2010-bit%201080p%20HEVC%20BDRip%20[Fin].torrent
 #aria2c -x 64 --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 *.torrent
 for ((i=1, j=10; i<=910; i=i+10, j=j+10))
 do

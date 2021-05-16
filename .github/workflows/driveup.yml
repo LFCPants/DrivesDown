@@ -33,7 +33,6 @@ jobs:
             sudo rm -rf /usr/share/php*
             sudo rm -rf /usr/lib/google-cloud-sdk/
             sudo rm -rf /opt/
-            df -h $GITHUB_WORKSPACE/download
       - uses: actions/checkout@v2.3.4
       - name: Install Rclone
         run: |

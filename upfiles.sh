@@ -1,7 +1,7 @@
 #!/bin/bash
-wget https://bangumi.moe/download/torrent/591d60511a0b230822448539/[VCB-Studio]%20Planetarian_%20Hoshi%20no%20Hito%20_%20%E6%98%9F%E4%B9%8B%E6%A2%A6%EF%BD%9E%E6%98%9F%E4%B9%8B%E4%BA%BA%EF%BD%9E%20_%20planetarian%EF%BD%9E%E6%98%9F%E3%81%AE%E4%BA%BA%EF%BD%9E%2010-bit%201080p%20HEVC%20BDRip%20[Fin].torrent
+wget https://bangumi.moe/download/torrent/591700451a0b2308224480e1/[Nyamazing&VCB-Studio]%20LoveLive!%20Sunshine!!%20_%20%E3%83%A9%E3%83%96%E3%83%A9%E3%82%A4%E3%83%96%EF%BC%81%E3%82%B5%E3%83%B3%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%B3!!%2010bit%201080p%20HEVC%20BDRip%20[Fin].torrent
 #aria2c -x 64 --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 *.torrent
-for ((i=1, j=10; i<=910; i=i+10, j=j+10))
+for ((i=1, j=10; i<=2000; i=i+10, j=j+10))
 do
 aria2c -x 64 --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 --select-file=$i-$j *.torrent
 rclone move -v --transfers 12 --checkers 16 --onedrive-chunk-size 200M --exclude "*.{sh,torrent,aria2}" /home/runner/work/DrivesDown/DrivesDown/download/ onedrive:/"我的文件 - animation_1 的文件"/番/

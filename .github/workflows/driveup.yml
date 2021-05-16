@@ -21,6 +21,19 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
+      - name: View Space
+        run: |
+            sudo apt remove  *CLI *android* ruby pypy nodejs
+            sudo apt-get --purge remove 'dotnet-*'
+            sudo apt-get --purge remove python*
+            sudo apt-get --purge remove powershell*
+            sudo apt autoremove
+            sudo rm -rf /usr/share/dotnet/
+            sudo rm -rf /usr/share/google-cloud-sdk/
+            sudo rm -rf /usr/share/php*
+            sudo rm -rf /usr/lib/google-cloud-sdk/
+            sudo rm -rf /opt/
+            df -h $GITHUB_WORKSPACE/download
       - uses: actions/checkout@v2.3.4
       - name: Install Rclone
         run: |
@@ -45,14 +58,6 @@ jobs:
           sudo chattr -i $HOME/.aria2c/*
           sudo chmod 777 $HOME/.aria2c/*
           sudo service aria2 restart
-      - name: Install Other
-        run: |
-          curl -sL https://git.io/cowtransfer | sh 
-          sudo mv cowtransfer-uploader /usr/bin/
-      - name: View Space
-        run: |
-          sudo rm -rf /opt/
-          df -h $GITHUB_WORKSPACE/download
       - name: SSH connection to Actions
         uses: P3TERX/ssh2actions@v1.0.0
         if: env.SSH_ACTIONS == 'true'

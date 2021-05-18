@@ -1,5 +1,5 @@
 #!/bin/bash
-wget http://storage.live.com/items/014GNKTQ7TLUOAFQAKLFHIXMMAB3E2DALP:/fczlm.torrent
+wget https://link.jscdn.cn/sharepoint/aHR0cHM6Ly9zaHRoZXktbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvaHJmX3NodGhleV9vbm1pY3Jvc29mdF9jb20vRWZOZEhBTEFDbGxPaTdHQURzbWhnVzhCcm4zTFN3R3A3cHFPUENxcHRjQzJVdz9lPUY5YWFqbw.torrent
 #aria2c -x 64 --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 *.torrent
 for ((i=2, j=2; i<=50; i=i+2, j=j+2))
 do
